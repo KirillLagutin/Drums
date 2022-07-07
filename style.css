@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5974fc
+}
+p {
+    color: #fff;
+    font-size: 3em;
+    margin: calc(50% - 10px);
+}
+#sn {
+  margin-top: 0; 
+}
+#hh {
+    margin: calc(60%);
+    color: #444;
+}
+#cr {
+    margin: calc(30%);
+    color: #444;
+}
+.drums {
+    width: 600px;
+    height: 400px;
+    background: #adcfef;
+    position: relative;
+}
+.kick {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    z-index: 3;
+}
+.snare {
+    width: 150px;
+    height: 50px;
+    background: #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 220px;
+    right: 85px;
+}
+.hi-hat {
+    width: 90px;
+    height: 10px;
+    background: #000;
+    border-radius: 20px;
+    position: absolute;
+    top: 180px;
+    right: 20px;
+}
+.hi-hat::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 225px;
+    background: inherit;
+    position: absolute;
+    top: -5px;
+    left: 42px;
+}
+.tom1 {
+    width: 80px;
+    height: 90px;
+    background: #000;
+    position: absolute;
+    top: 110px;
+    right: 190px;
+    transform: rotate(-15deg);
+}
+.tom2 {
+    width: 100px;
+    height: 110px;
+    background: #000;
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    transform: rotate(15deg);
+}
+.tom3 {
+    width: 170px;
+    height: 140px;
+    background: #000;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.crash {
+    width: 170px;
+    height: 10px;
+    border-radius: 20px 20px 0 0;
+    background: #000;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    transform: rotate(15deg);
+}
+.crash::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 170px;
+    background: inherit;
+    position: absolute;
+    top: -5px;
+    left: 82px;
+}
+.hit {
+    background: #f00;
+}
