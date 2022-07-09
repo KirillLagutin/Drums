@@ -9,27 +9,25 @@ body {
     align-items: center;
     background: #5974fc
 }
-p {
-    color: #fff;
-    font-size: 3em;
-    margin: calc(50% - 10px);
-}
-#sn {
-  margin-top: 0; 
-}
-#hh {
-    margin: calc(60%);
-    color: #444;
-}
-#cr {
-    margin: calc(30%);
-    color: #444;
+.header {
+    text-align: right;
+    margin-right: 10px;
+    user-select: none;
 }
 .drums {
     width: 600px;
     height: 400px;
-    background: #adcfef;
+    background: #8ab2d6;
     position: relative;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 10px;
+}
+.drum {
+    color: #fff;
+    font-size: 3em;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
 }
 .kick {
     width: 200px;
@@ -58,6 +56,7 @@ p {
     position: absolute;
     top: 180px;
     right: 20px;
+    text-align: right;
 }
 .hi-hat::before {
     content: "";
@@ -104,6 +103,7 @@ p {
     top: 50px;
     left: 40px;
     transform: rotate(15deg);
+    text-align: left;
 }
 .crash::before {
     content: "";
